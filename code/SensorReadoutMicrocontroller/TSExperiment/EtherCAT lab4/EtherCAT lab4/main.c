@@ -121,7 +121,7 @@ int main(void)
 {
 	/* Initialize
 	 MCU, drivers and middleware */
-	*sensor__status=0b10000001; //INITIALIZE FOR (USART_en,free,free,res,PE,cap,hall,baro)
+	*sensor__status=0b10000010; //INITIALIZE FOR (USART_en,free,free,res,PE,cap,hall,baro)
 	
 	atmel_start_init();
 	usart_en = *sensor__status >>7;
